@@ -13,7 +13,7 @@ const ReviewSchema=new mongoose.Schema({
     }]
 },
 {
-    timestams:true
+    timestamps:true
 });
 
 export const ReviewModel=mongoose.model("Reviews",ReviewSchema);

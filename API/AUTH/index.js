@@ -40,7 +40,7 @@ Router.post("/signup",async(req,res)=>{
     return res.status(200).json({token,status:"success"});
     //create new cluster/project in MongoDB like taskmanagement to test API
     }catch(error){
-     return res.status(500).json({error:console.error(message)});
+     return res.status(500).json({error:console.error.message});
 
     }
 });

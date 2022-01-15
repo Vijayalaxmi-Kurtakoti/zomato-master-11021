@@ -50,7 +50,7 @@ Method      GET
 
 Router.get("/search",async(req,res)=>{
     try{
-        const{_id}=req.body;
+        const{searchString}=req.body;
         const restaurants=await RestaurantModel.find({
             name:{$regex:searchString,$options:"i"}
         });
